@@ -5,21 +5,21 @@
 class Gcon < Formula
   desc "Terminal UI for Google Cloud Platform"
   homepage "https://github.com/slayer/gcon"
-  version "0.0.0-demos"
+  version "0.8.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/slayer/gcon/releases/download/v0.0.0-demos/gcon_0.0.0-demos_darwin_amd64.tar.gz"
-      sha256 "7bcacb5b4abca4fca9f4dc1ec65a5911cc2a6bd9307cdd008d729361b86505bd"
+      url "https://github.com/slayer/gcon/releases/download/v0.8.0/gcon_0.8.0_darwin_amd64.tar.gz"
+      sha256 "e505c2cb6d44c4170d0629f01bd4be372af5aa1c26b1d1da6b9f65821b1af1ee"
 
       define_method(:install) do
         bin.install "gcon"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/slayer/gcon/releases/download/v0.0.0-demos/gcon_0.0.0-demos_darwin_arm64.tar.gz"
-      sha256 "c669c77ce29a645640e48e31906c4a84d6147332e1c337bda6749f7bcde3b60b"
+      url "https://github.com/slayer/gcon/releases/download/v0.8.0/gcon_0.8.0_darwin_arm64.tar.gz"
+      sha256 "7fe4dcae747225431439b632aaccc334e3df9aa4957e1fc94fa725b8f14b3f6d"
 
       define_method(:install) do
         bin.install "gcon"
@@ -29,15 +29,15 @@ class Gcon < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/slayer/gcon/releases/download/v0.0.0-demos/gcon_0.0.0-demos_linux_amd64.tar.gz"
-      sha256 "6446ae0c1df7354b081a67161ae9188557946e60a2b73b3385b34754358bcd02"
+      url "https://github.com/slayer/gcon/releases/download/v0.8.0/gcon_0.8.0_linux_amd64.tar.gz"
+      sha256 "e3b2f57024c219c3790764d85a4bbb40e376217464178865cf7b625b2ae3c483"
       define_method(:install) do
         bin.install "gcon"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/slayer/gcon/releases/download/v0.0.0-demos/gcon_0.0.0-demos_linux_arm64.tar.gz"
-      sha256 "e2446f1cbd04467d95a0e08cd75f57160da8ed5c4b3cc5fef07762f884a91136"
+      url "https://github.com/slayer/gcon/releases/download/v0.8.0/gcon_0.8.0_linux_arm64.tar.gz"
+      sha256 "e47aff81c7316d78621de32bb445d44d7ddce99d3e24da6d2dce5f3ff6689c59"
       define_method(:install) do
         bin.install "gcon"
       end
