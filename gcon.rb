@@ -5,21 +5,21 @@
 class Gcon < Formula
   desc "Terminal UI for Google Cloud Platform"
   homepage "https://github.com/slayer/gcon"
-  version "0.8.0"
+  version "0.9.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/slayer/gcon/releases/download/v0.8.0/gcon_0.8.0_darwin_amd64.tar.gz"
-      sha256 "e505c2cb6d44c4170d0629f01bd4be372af5aa1c26b1d1da6b9f65821b1af1ee"
+      url "https://github.com/slayer/gcon/releases/download/v0.9.0/gcon_0.9.0_darwin_amd64.tar.gz"
+      sha256 "6ad930cfd66fb018877a9fccee20ec8dcf65d1cb989f7f2eb35523fffa4d3707"
 
       define_method(:install) do
         bin.install "gcon"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/slayer/gcon/releases/download/v0.8.0/gcon_0.8.0_darwin_arm64.tar.gz"
-      sha256 "7fe4dcae747225431439b632aaccc334e3df9aa4957e1fc94fa725b8f14b3f6d"
+      url "https://github.com/slayer/gcon/releases/download/v0.9.0/gcon_0.9.0_darwin_arm64.tar.gz"
+      sha256 "3f4b8777bd088a637fc7e32222bf8e244e657055173a02e95cb5c05b2043936a"
 
       define_method(:install) do
         bin.install "gcon"
@@ -29,15 +29,15 @@ class Gcon < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/slayer/gcon/releases/download/v0.8.0/gcon_0.8.0_linux_amd64.tar.gz"
-      sha256 "e3b2f57024c219c3790764d85a4bbb40e376217464178865cf7b625b2ae3c483"
+      url "https://github.com/slayer/gcon/releases/download/v0.9.0/gcon_0.9.0_linux_amd64.tar.gz"
+      sha256 "9203c01293280b64917769f8fc2369d2b38033437d6c804765a42809be19bccf"
       define_method(:install) do
         bin.install "gcon"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/slayer/gcon/releases/download/v0.8.0/gcon_0.8.0_linux_arm64.tar.gz"
-      sha256 "e47aff81c7316d78621de32bb445d44d7ddce99d3e24da6d2dce5f3ff6689c59"
+      url "https://github.com/slayer/gcon/releases/download/v0.9.0/gcon_0.9.0_linux_arm64.tar.gz"
+      sha256 "f7bec8f8b841516365843d9941fdacecb78b3b90297d990d3dedecdabee8bd0a"
       define_method(:install) do
         bin.install "gcon"
       end
